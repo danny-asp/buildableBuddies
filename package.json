@@ -1,0 +1,23 @@
+{
+  "name": "buildablebuddies",
+  "version": "1.0.0",
+  "description": "Lego Minifigures Online Store",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "author": "Yordan Asparuhov",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.4",
+    "nodemon": "^3.0.3"
+  }
+}
