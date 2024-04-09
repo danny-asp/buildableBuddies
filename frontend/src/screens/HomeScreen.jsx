@@ -5,11 +5,12 @@ import Message from "../components/Message.jsx";
 import Loader from "../components/Loader.jsx";
 
 
+
 import Product from "../components/Product";
 
 const HomeScreen = () => {
   const {data:products, isLoading, error} = useGetProductsQuery()
-  console.log(products)
+ 
 
   return (
     <>
@@ -33,6 +34,9 @@ const HomeScreen = () => {
           </Col>
         ))}
       </Row></>)}
+     
+
+
       
     </>
   );
